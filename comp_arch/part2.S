@@ -54,7 +54,7 @@ binary_search:
 
 	found:
 		mov X0, X11			//store found key value in X0 to be returned
-		br	X30
+		br X30
 
 	notFound:
 		mov X0, #-1			//store -1 in X0 to be returned
