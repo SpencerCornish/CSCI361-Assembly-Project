@@ -35,7 +35,16 @@ int main(void)
 	// depending on the nature of your project
 
 	long long int unsorted[15] = {9, 5, 3, 2, 1, 7, 8, 10, 4, 6, 15, 22, 13, 30, 11};
-    long long int found_index = insertion_sort(unsorted, 15, 6);
+
+	//looks for index in unsorted array
+	long long int found_index = insertion_sort(unsorted, 15, 3);
+	    if(found_index != -1)
+	    	printf("Index of key after sorting is %ld\n", found_index);
+	    else
+	    	printf("Key not found\n");
+
+	//looks for index not in unsorted array
+    found_index = insertion_sort(unsorted, 15, 12);
     if(found_index != -1)
     	printf("Index of key after sorting is %ld\n", found_index);
     else
